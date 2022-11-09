@@ -18,6 +18,14 @@ function sum(a, b) { //eslint-disable-line
   return [totalSum, message];
 }
 
+function multiply(a, b) { //eslint-disable-line
+console.log('in the multiply funstion', a, b);
+let totalMultiply = a * b;
+let message = 'The product of ' a + ' and ' + b + ' is ' totalMultiply '.';
+// console.log([totalMultiply, message]);
+return [totalMultiply, message];
+}
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
