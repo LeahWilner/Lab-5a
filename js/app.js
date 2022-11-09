@@ -21,7 +21,7 @@ function sum(a, b) { //eslint-disable-line
 function multiply(a, b) { //eslint-disable-line
 console.log('in the multiply funstion', a, b);
 let totalMultiply = a * b;
-let message = 'The product of ' a + ' and ' + b + ' is ' totalMultiply '.';
+let message = 'The product of ' + a + ' and ' + b + ' is ' + totalMultiply + '.';
 // console.log([totalMultiply, message]);
 return [totalMultiply, message];
 }
