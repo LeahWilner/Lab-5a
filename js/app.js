@@ -19,12 +19,15 @@ function sum(a, b) { //eslint-disable-line
 }
 
 function multiply(a, b) { //eslint-disable-line
-console.log('in the multiply funstion', a, b);
+console.log('in the multiply function', a, b);
 let totalMultiply = a * b;
 let message = 'The product of ' + a + ' and ' + b + ' is ' + totalMultiply + '.';
 // console.log([totalMultiply, message]);
 return [totalMultiply, message];
 }
+
+
+
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -57,8 +60,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+let sumNumber = sum((a, b)[0], c)[0]  ;
+console.log('sum', sumNumber); 
+let productNumber = multiply( multiply (a,b)[0] ,c)[0] ;
+console.log(productNumber);
+let message1 = `${a} and ${b} and ${c} sum to ${sumNumber}.` ;
+let message2 = `The product of ${a} adn ${b} and ${c} is ${productName}.` ;
 
+return [sumNumber, productNumber, message1, message2];
+//  returns [sumNumber, productNumber, "4 and 7 and 5 sum to 16.", "The product of 4 and 7 and 5 is 140."]; 
 }
+
+
+
+
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
